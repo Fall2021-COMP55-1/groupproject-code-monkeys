@@ -2,6 +2,8 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.util.Vector;
 
+import javax.imageio.ImageIO;
+
 import acm.graphics.GImage;
 import acm.graphics.GLabel;
 import acm.graphics.GObject;
@@ -12,11 +14,15 @@ public class CharacterSelectPane extends GraphicsPane {
 	private GLabel orangLabel;
 	private GLabel gorillaLabel;
 	private GLabel monkeyLabel;
+	private GLabel dogLabel;
+	private GLabel tigerLabel;
+	private GLabel deerLabel;
 	private GButton charSelect = new GButton("SELECTED", 0, 0, 0, 0);
 	private GButton next = new GButton("NEXT", 1400, 700, 60, 60);
 	private GImage charOrang;
 	private GImage charGorilla;
 	private GImage charMonkey;
+	//private GImage pickles;
 	private GParagraph para;
 	private GButton rect;
 	private boolean monkey,orang,gorilla = false;
@@ -32,10 +38,16 @@ public class CharacterSelectPane extends GraphicsPane {
 		rect = new GButton("Back", 25, 25, 60, 60);
 		rect.setFillColor(Color.RED);
 		
-		charMonkey = new GImage("Chimp_Cartoon.jpg", 250, 200);
+		//charMonkey = new GImage("Chimp_Cartoon.jpg", 250, 200);
+		String pickles = "images/border.png";
+		charMonkey = new GImage("images/border.png",250,250);
+		charMonkey.setSize(250,250);
 		charGorilla = new GImage("Gorilla_Cartoon.jpg", 650, 200);
 		charOrang = new GImage ("Orangutan_Cartoon.jpg", 950, 200);
-
+		
+		dogLabel = new GLabel("Dog", 375, 225);
+		tigerLabel = new GLabel("Tiger", 700, 225);
+		deerLabel =  new GLabel("Deer", 1025, 225);
 		monkeyLabel = new GLabel("Monkey", 375, 525);
 		gorillaLabel = new GLabel("Gorilla", 700, 525);
 		orangLabel =  new GLabel("Orangutan", 1025, 525);
@@ -43,6 +55,9 @@ public class CharacterSelectPane extends GraphicsPane {
 		monkeyLabel.setFont(LABEL_FONT);
 		gorillaLabel.setFont(LABEL_FONT);
 		orangLabel.setFont(LABEL_FONT);
+		dogLabel.setFont(LABEL_FONT);
+		tigerLabel.setFont(LABEL_FONT);
+		deerLabel.setFont(LABEL_FONT);
 		
 		monkeyLabel.setColor(Color.DARK_GRAY);
 		gorillaLabel.setColor(Color.LIGHT_GRAY);
@@ -70,9 +85,12 @@ public class CharacterSelectPane extends GraphicsPane {
 	public void showContents() {
 		program.add(para);
 		program.add(rect);
-		program.add(charOrang);
-		program.add(charGorilla);
-		program.add(charMonkey);
+		//program.add(charOrang);
+		//program.add(charGorilla);
+		//program.add(charMonkey);
+		program.add(dogLabel);
+		program.add(tigerLabel);
+		program.add(deerLabel);
 		program.add(gorillaLabel);
 		program.add(monkeyLabel);
 		program.add(orangLabel);
