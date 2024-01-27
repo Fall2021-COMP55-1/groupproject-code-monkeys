@@ -22,6 +22,9 @@ public class CharacterSelectPane extends GraphicsPane {
 	private GImage charOrang;
 	private GImage charGorilla;
 	private GImage charMonkey;
+	private GImage charTiger;
+	private GImage charDog;
+	private GImage charDeer;
 	//private GImage pickles;
 	private GParagraph para;
 	private GButton rect;
@@ -38,12 +41,15 @@ public class CharacterSelectPane extends GraphicsPane {
 		rect = new GButton("Back", 25, 25, 60, 60);
 		rect.setFillColor(Color.RED);
 		
-		//charMonkey = new GImage("Chimp_Cartoon.jpg", 250, 200);
+		charMonkey = new GImage("Chimp_Cartoon.jpg", 250, 200);
 		String pickles = "images/border.png";
-		charMonkey = new GImage("images/border.png",250,250);
-		charMonkey.setSize(250,250);
+		//charMonkey = new GImage("images/border.png",250,250);
+		///charMonkey.setSize(250,250);
 		charGorilla = new GImage("Gorilla_Cartoon.jpg", 650, 200);
 		charOrang = new GImage ("Orangutan_Cartoon.jpg", 950, 200);
+		charTiger = new GImage("images/Tiger.png",200,200); 
+		charDog = new GImage("images/border.png",250,250); 
+		charDeer = new GImage("images/deer.png",250,250); 
 		
 		dogLabel = new GLabel("Dog", 375, 225);
 		tigerLabel = new GLabel("Tiger", 700, 225);
