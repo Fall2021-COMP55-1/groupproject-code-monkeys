@@ -200,11 +200,24 @@ public class GraphicsGame extends GraphicsPane implements ActionListener {
 		{
 			character = new GImage("Gorilla_Cartoon.jpg", startCol * spaceWidth(), startRow * spaceHeight());
 		}
-		else
+		else if(monkey==3)
 		{
 			character = new GImage("Orangutan_Cartoon.jpg", startCol * spaceWidth(), startRow * spaceHeight());
 		}
-		
+		else if(monkey==4)
+		{
+			character = new GImage("images/Tiger.png", startCol * spaceWidth(), startRow * spaceHeight());
+			character.setSize(400, 400);
+		}
+		else if(monkey==5)
+		{
+			character = new GImage("images/deer.png", startCol * spaceWidth(), startRow * spaceHeight());
+			character.setSize(400, 400);
+		}
+		else {
+			character = new GImage("images/Border.png", startCol * spaceWidth(), startRow * spaceHeight());
+			character.setSize(400, 400);
+		}
 		for (Entity temp:barrels) {
 			entity = new GImage("barrel.png", temp.getCol() * spaceWidth(), temp.getRow() * spaceHeight());
 			barrelImages.add(entity);

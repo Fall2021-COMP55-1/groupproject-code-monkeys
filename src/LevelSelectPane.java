@@ -21,7 +21,7 @@ public class LevelSelectPane extends GraphicsPane {
 	private GImage mediumLevel;
 	private GImage hardLevel;
 	private GButton levelSelect = new GButton("SELECTED", 0, 0, 0, 0);
-	private GButton next = new GButton("NEXT", 1400, 700, 60, 60);
+	private GButton next = new GButton("NEXT", 1200, 25, 60, 60);
 	private int monkey = 0;
 
 	public LevelSelectPane(MainApplication app, int choice) {
