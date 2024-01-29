@@ -14,7 +14,7 @@ public class LevelSelectPane extends GraphicsPane {
 	//private GLabel easyLabel = new GLabel("Easy", 232, 200);
 	//private GLabel mediumLabel = new GLabel("Medium", 725, 200);
 	//private GLabel hardLabel = new GLabel("Hard", 1232, 200);
-	private GLabel easyLabel = new GLabel("Easy", 725, 200);
+	private GLabel easyLabel = new GLabel("Easy", 525, 200);
 	private GLabel mediumLabel = new GLabel("Medium", 725, 200);
 	private GLabel hardLabel = new GLabel("Hard", 725, 200);
 	private GImage easyLevel;
@@ -26,7 +26,7 @@ public class LevelSelectPane extends GraphicsPane {
 
 	public LevelSelectPane(MainApplication app, int choice) {
 		this.program = app;
-		para = new GParagraph("Level Select", 700, 75);
+		para = new GParagraph("Level Select", 500, 75);
 		para.setFont("Arial-26");
 		
 		rect = new GButton("Back", 25, 25, 60, 60);
@@ -35,9 +35,10 @@ public class LevelSelectPane extends GraphicsPane {
 		//easyLevel = new GImage("EasyMap.png", 130, 250);
 		//mediumLevel = new GImage("MediumMap.png", 630, 255);
 		//hardLevel = new GImage("HardMap.png", 1130, 240);
-		easyLevel = new GImage("EasyMap.png", 630, 250);
+		easyLevel = new GImage("EasyMap.png", 440, 250);
 		mediumLevel = new GImage("MediumMap.png", 630, 255);
 		hardLevel = new GImage("HardMap.png", 630, 240);
+		
 		
 		easyLabel.setFont("Arial-26");
 		easyLabel.setColor(Color.YELLOW);
@@ -130,7 +131,7 @@ public class LevelSelectPane extends GraphicsPane {
 		}
 		if (obj == easyLevel) {
 			//levelSelect = new GButton("SELECTED", 230, 575, 100, 50);
-			levelSelect = new GButton("SELECTED", 730, 575, 100, 50);
+			levelSelect = new GButton("SELECTED", 530, 575, 100, 50);
 		}
 		if (obj == mediumLevel) {
 			//levelSelect = new GButton("SELECTED", 730, 575, 100, 50);
