@@ -214,8 +214,14 @@ public class GraphicsGame extends GraphicsPane implements ActionListener {
 			character = new GImage("images/deer.png", startCol * spaceWidth(), startRow * spaceHeight());
 			character.setSize(400, 400);
 		}
-		else {
+		else if(monkey ==6){
 			character = new GImage("images/Border.png", startCol * spaceWidth(), startRow * spaceHeight());
+			character.setSize(400, 400);
+		}else if(monkey ==7){
+			character = new GImage("images/fesh.png", startCol * spaceWidth(), startRow * spaceHeight());
+			character.setSize(400, 400);
+		}else if(monkey ==8){
+			character = new GImage("images/donkey.png", startCol * spaceWidth(), startRow * spaceHeight());
 			character.setSize(400, 400);
 		}
 		for (Entity temp:barrels) {
